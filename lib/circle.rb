@@ -17,4 +17,8 @@ class Circle
     (@radius ** 2) * Pi
   end
 
+  def perimeter
+    (2 * Pi) * @radius
+  end
+
 end
