@@ -20,5 +20,14 @@ class Circle
   def perimeter
     (2 * Pi) * @radius
   end
+end
 
+class Square
+  attr_reader :side, :x, :y
+
+  def initialize(side, x = 0, y = 0)
+    @side = side
+    @x = x
+    @y = y
+  end
 end
