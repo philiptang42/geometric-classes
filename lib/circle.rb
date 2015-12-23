@@ -30,4 +30,6 @@ class Square
     @x = x
     @y = y
   end
+
+  
 end
