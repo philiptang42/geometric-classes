@@ -43,5 +43,7 @@ class Square
     @side * Math.sqrt(2)
   end
 
-  
+  def perimeter
+    @side * 4
+  end
 end
