@@ -38,5 +38,10 @@ class Square
   def width
     @side
   end
+
+  def diameter
+    @side * Math.sqrt(2)
+  end
+
   
 end
