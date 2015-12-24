@@ -27,10 +27,20 @@ class Square
     side ** 2
   end
 
-  def contains_point?(input_x, input_y)
-    top_left = [x, side + y]
-    top_right = [x + side, y + side]
-    bottom_left = [x, y]
-    bottom_right = [x + side, y]
+  def contains_point?(x,y)
+    if x.abs <= (side.to_f/2) && y.abs <= (side.to_f/2)
+      true
+    else
+      false
+    end
+  end
+
+  def contains_point?(x,y)
+    if x.between?(-(side.to_f/2),(side.to_f/2)) &&
+       y.between?(-(side.to_f/2),(side.to_f/2))
+      true
+    else
+      false
+    end
   end
 end
