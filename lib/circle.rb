@@ -46,4 +46,8 @@ class Square
   def perimeter
     @side * 4
   end
+
+  def area
+    @side ** 2
+  end
 end
