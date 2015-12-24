@@ -10,44 +10,14 @@ class Circle
   end
 
   def diameter
-    @radius * 2
+    radius * 2
   end
 
   def area
-    (@radius ** 2) * Pi
+    (radius ** 2) * Pi
   end
 
   def perimeter
-    (2 * Pi) * @radius
-  end
-end
-
-class Square
-  attr_reader :side, :x, :y
-
-  def initialize(side, x = 0, y = 0)
-    @side = side
-    @x = x
-    @y = y
-  end
-
-  def length
-    @side
-  end
-
-  def width
-    @side
-  end
-
-  def diameter
-    @side * Math.sqrt(2)
-  end
-
-  def perimeter
-    @side * 4
-  end
-
-  def area
-    @side ** 2
+    (2 * Pi) * radius
   end
 end
