@@ -31,5 +31,12 @@ class Square
     @y = y
   end
 
+  def length
+    @side
+  end
+
+  def width
+    @side
+  end
   
 end
